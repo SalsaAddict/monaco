@@ -1,0 +1,13 @@
+<div>
+
+
+<div class="dropdown">
+    <input type="text" [(ngModel)]="searchText" (ngModelChange)="search()" data-bs-toggle="dropdown">
+    <!--<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      Dropdown button
+    </button>-->
+    <ul #items class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li *ngFor="let item of data?.items"><a class="dropdown-item" href="#">{{item.text}}, {{item.description}}</a></li>
+    </ul>
+  </div>
+</div>
